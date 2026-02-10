@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Compact Registration Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<form action="#" method="post">
+
+<h2>Registration Form</h2>
+
+<p>First Name:</p>
+<input type="text" name="fname" required>
+
+<p>Last Name:</p>
+<input type="text" name="lname" required>
+
+<p>Mobile Number:</p>
+<input type="text" name="mobile" required pattern="[0-9]{10}" title="Enter a valid 10-digit number">
+
+<p>Password:</p>
+<input type="password" name="password" required minlength="6" title="Password must be at least 6 characters">
+
+<p>Gender:</p>
+<div class="options" required>
+<input type="radio" name="gender" value="Male" required> Male
+<input type="radio" name="gender" value="Female"> Female
+<input type="radio" name="gender" value="Other"> Other
+</div>
+
+<p>User Type:</p>
+<div class="options" required>
+<input type="radio" name="usertype" value="Admin" required> Admin
+<input type="radio" name="usertype" value="User"> User
+</div>
+
+<p>Address:</p>
+<div class="address-row">
+    <select name="province" required>
+        <option selected disabled>Province</option>
+        <option>Province 1</option>
+        <option>Province 2</option>
+        <option>Bagmati</option>
+        <option>Gandaki</option>
+        <option>Lumbini</option>
+    </select>
+
+    <select name="district" required>
+        <option selected disabled>District</option>
+        <option>Kathmandu</option>
+        <option>Bhaktapur</option>
+        <option>Lalitpur</option>
+        <option>Pokhara</option>
+        <option>Biratnagar</option>
+    </select>
+
+    <select name="city" required>
+        <option selected disabled>City</option>
+        <option>Kathmandu</option>
+        <option>Bhaktapur</option>
+        <option>Lalitpur</option>
+        <option>Pokhara</option>
+        <option>Biratnagar</option>
+    </select>
+</div>
+
+<p>Programming Interest:</p>
+<div class="options">
+<input type="checkbox" name="interest" value="Web" required> Web Programming
+<input type="checkbox" name="interest" value="C++"> C++
+<input type="checkbox" name="interest" value="C#"> C#
+<input type="checkbox" name="interest" value="JS"> JavaScript
+</div>
+
+<input type="submit" value="Submit">
+
+</form>
+
+</body>
+</html>
