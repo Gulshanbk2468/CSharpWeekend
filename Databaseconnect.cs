@@ -2,7 +2,7 @@ using MySql.Data.MySqlClient;
 
 public class DatabaseConnect
 {
-    string connStr = "server=localhost;user=root;password=;database=testcsharp";
+    string connStr = "server=localhost;user=root;password=;database=techcsharp";
     public bool TestConnection(out string message)
     {
         try
